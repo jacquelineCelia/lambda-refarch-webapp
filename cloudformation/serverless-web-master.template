@@ -523,7 +523,7 @@
 				"CognitoCreationHelperStack": {
           "Type" : "AWS::CloudFormation::Stack",
           "Properties" : {
-            "TemplateURL" : {"Fn::Join": ["/", ["https://s3.amazonaws.com", {"Ref": "CodeBucket"}, {"Ref": "CodeKeyPrefix"}, "cognito-creation-helper.template"]]},
+            "TemplateURL" : {"Fn::Join": ["/", ["https://github.com/jacquelineCelia/lambda-refarch-webapp/blob/master/cloudformation/cognito-creation-helper.template"]]},
             "Parameters" : {
               "CognitoPoolDevID": { "Ref": "CognitoPoolDevID" },
 							"UnauthenticatedBlogUserPolicy" : {"Ref": "UnauthenticatedBlogUserPolicy"},
